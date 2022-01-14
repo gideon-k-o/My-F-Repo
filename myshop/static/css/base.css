@@ -221,11 +221,6 @@ tbody tr td form input:hover{
     padding: 5px;
     margin: 40px 250px;
 }
-@media all and (max-width=500px){
-    .Your-Cart-Is .buttonlight{
-        margin: 40px 100px;
-    }
-}
 /*end of styling cart detail*/
 /* styling order*/
 .oder{
@@ -412,7 +407,7 @@ footer h5{
     flex-basis: 25%;
     position: sticky;
     top: 70px;
-    align-self: flex-start; 
+    align-self: flex-start;
     border-radius: 4px;
     background: rgb(240, 223, 191);
 }
@@ -420,7 +415,7 @@ footer h5{
     flex-basis: 25%;
     position: sticky;
     top: 70px;
-    align-self: flex-start; 
+    align-self: flex-start;
     border-radius: 4px;
     background: wheat;
 }
@@ -457,7 +452,7 @@ footer h5{
     text-align: center;
     padding: 5px 0px;
     cursor: pointer;
-    
+
 }
 .body-Contents .col-2 p a{
     color: blue;
@@ -571,4 +566,215 @@ footer h5{
     background: blue;
     color: #fff;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 500px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+        .nav-bar{
+        background-color: rgb(252, 212, 240);
+        display: grid;
+        justify-content: space-between;
+    }
+        .nav-bar #header .logo img{
+        width: 50px;
+        border-radius: 50%;
+        margin: 5px 150px;
+    }
+     .nav-bar h1{
+         margin: auto;
+     }
+    #subheader{
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    #subheader ul{
+        display: flex;
+    }
+    #subheader ul li{
+        list-style: none;
+        padding: 0px 20px;
+    }
+    .footer-content{
+    display: grid;
+    justify-content: space-between;
+    padding: 10px;
+    }
+    .quick-links{
+    margin: 10px auto;
+    }
+    .quick-links ul li{
+        list-style: none;
+        margin-top: 5px;
+    }
+    .quick-links ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: small;
+    }
+    .social-media{
+        text-align: center;
+        margin: auto;
+    }
+    .contacts{
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .feedback form{
+        display: grid;
+        margin: 5px 30px;
+    }
+    footer h5{
+        text-align: center;
+        padding: 10px 0px;
+        color: whitesmoke;
+    }
+    #content{
+    display: grid;
+    justify-content: space-between;
+    margin: 2px 0px;
+    background-color: #fcfbfb;
+    margin-bottom: 20px;
+    }
+    #sidebar ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sidebar li{
+        list-style: none;
+        margin: 5px 10px;
+    }
+    .all-products-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: fit-content;
+        overflow: hidden;
+    }
+    .product-list .item{
+        display: grid;
+        text-align: center;
+        flex-basis: 23%;
+        margin-top: 5px;
+        padding: 3px 0px;
+    }
+    .product-list .item a img{
+        width: 100px;
+    }
+    .product-detail-body .product-desc img{
+        width: 150px;
+        height: 150px;
+    }
+    .product-detail-body .product-desc{
+        display: grid;
+    }
+    .cart-body-content .cart2 thead tr th{
+        padding: 2px 1px;
+        font-size: 0.5em;
+    }
+    tbody tr td a img{
+        width: 30px;
+        height: auto;
+    }
+    tbody input{
+        font-size: 0.5em;
+    }
+    .Your-Cart-Is .buttonlight{
+        margin: 40px 100px;
+    }
+    tbody tr num{
+        font-size: 0.3em;
+    }
+    tbody tr .nm{
+        font-size: 0.2em;
+    }
+    .total td{
+        font-size: small;
+    }
+    .oder .order-details{
+        display: grid;
+        align-items: center;
+    }
+    .oder .order-details form{
+        border: 2px black;
+        margin: auto;
+    }
+    .oder .order-details a{
+        width: 100px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .order-created-content h1{
+        color: greenyellow;
+        margin: auto 20px;
+        max-width: 300px;
+    }
+    .order-created-content p{
+        max-width: 300px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 100px 10px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .order-created-content p span{
+        font-style: italic;
+        margin-top: 30px;
+    }
+    .body-contents{
+        display: grid;
+        margin: auto;
+    }
+    .body-contents .description{
+        margin: auto;
+        max-width: 400px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    .row{
+        display: grid;
+        margin: auto;
+    }
+    .mgbhstry{
+        width: 300px;
+        margin: auto;
+        text-align: centre;
+        font-size: 0.5em;
+    }
+    .small-container{
+        margin: auto;
+    }
+    .body-contents .mogibe-logo img{
+        width: 200px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .body-Contents .col-2 .the-container{
+        margin: auto;
+    }
+    .body-Contents .col-2 .the-container h1{
+        margin: 10px auto;
+        text-align: center;
+        font-size: 1em;
+    }
+    .quiz-box{
+        width: 300px;
+        height: 35px;
+        overflow: hidden;
+        margin: 50px auto;
+        background: mediumturquoise;
+        padding: 0px 10px;
+        position: relative;
+    }
+    .quiz-box h2 p{
+        max-width: 300px;
+        margin: auto;
+    }
+    .quiz-box h2{
+        width: 280px;
+    }
 }
