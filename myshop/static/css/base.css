@@ -100,7 +100,6 @@
     display: grid;
     text-align: center;
     flex-basis: 24%;
-    background-color: #e1e1e1;
     margin-top: 5px;
     padding: 3px 0px;
 }
@@ -403,52 +402,27 @@ footer h5{
     display: flex;
     justify-content: space-between;
 }
-.body-Contents .col-1{
-    flex-basis: 25%;
-    position: sticky;
-    top: 70px;
-    align-self: flex-start;
-    border-radius: 4px;
-    background: rgb(240, 223, 191);
-}
-.body-Contents .col-3{
-    flex-basis: 25%;
-    position: sticky;
-    top: 70px;
-    align-self: flex-start;
-    border-radius: 4px;
-    background: wheat;
-}
-.body-Contents .col-2{
-    background: rgb(238, 238, 238);
-}
 .body-Contents .col-2 .the-container h1{
     margin: 10px auto;
     text-align: center;
     font-size: 2em;
 }
-.quiz-box{
+details{
     width: 600px;
-    height: 35px;
-    overflow: hidden;
+    height: fit-content;
     margin: 50px auto;
-    background: mediumturquoise;
     padding: 0px 20px;
-    position: relative;
 }
-.quiz-box h2 p{
-    position: absolute;
+details  p{
     max-width: 400px;
     max-height: fit-content;
-    padding: 5px 80px;
     font-size: large;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: darkgray;
     text-align: center;
-    transition: transform 0.3s ease;
+    margin: auto;
 }
-.quiz-box h2{
+details p a{
     text-align: center;
     padding: 5px 0px;
     cursor: pointer;
@@ -464,10 +438,11 @@ footer h5{
     background: linear-gradient( rgb(250, 250, 236), rgb(253, 249, 253), rgb(252, 250, 245));
 }
 .small-container h1{
-    padding: 40px;
+    margin: auto;
     color: rgb(77, 76, 74);
     font-size: 2em;
     text-align: center;
+    color: red;
 }
 .body-contents{
     display: flex;
@@ -494,31 +469,6 @@ footer h5{
     font-size: 1.8em;
     color: #909090;
 }
-.body-contents .description p a{
-    color: blue;
-}
-.body-contents .description p .m{
-    color: darkgoldenrod;
-}
-.body-contents .description p .g{
-    color: rgb(224, 51, 224);
-}
-.body-contents .description p .b{
-    color: rgb(54, 238, 54);
-}
-.body-contents  h2 .om{
-    color: darkgoldenrod;
-}
-.body-contents h2 .ig{
-    color: rgb(224, 51, 224);
-}
-.body-contents h2 .eb{
-    color: rgb(54, 238, 54);
-}
-.body-contents .tech{
-    padding: 0px 10px;
-    color: rgb(45, 79, 192);
-}
 .designers{
     display: grid;
 }
@@ -540,7 +490,7 @@ footer h5{
 }
 .col-3{
     border: 2px solid #000;
-    width: 250px;
+    width: 300px;
     height: fit-content;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -760,6 +710,7 @@ footer h5{
         margin: 10px auto;
         text-align: center;
         font-size: 1em;
+        max-width: 200px;
     }
     .quiz-box{
         width: 300px;

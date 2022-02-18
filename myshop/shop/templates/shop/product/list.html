@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    {% if category %}{{ category.name }}{% else %}Mogibe{% endif %}
+    {% if category %}{{ category.name }}{% else %}Giock.com{% endif %}
 {% endblock %}
 
 {% block content %}
@@ -28,10 +28,10 @@
             <div class="item">
                 <a href="{{ product.get_absolute_url }}">
                     <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/logo.jpg' %}{% endif %}"/>
-                </a>    
+                </a>
                 <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
                 <br>
-                ${{ product.price }}
+                Ksh.{{ product.price }}
             </div>
         {% endfor %}
         </div>
